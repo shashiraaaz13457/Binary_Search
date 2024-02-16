@@ -6,10 +6,14 @@ public class FloorANDceiling_in_Array {
         int ans = floor(arr,target);
         System.out.println(ans);
     }
-    //Ceiling of a number..
+//    Ceiling of a number..
 //    static int ceiling(int[] arr,int target){
 //        int start = 0;
 //        int end = arr.length-1;
+    //but what if the target is greater than the greatest number in the array
+//        if(target > arr[arr.length-1]){
+//        return -1;
+//        }
 //        while (start<=end){
 //            int mid = start + (end-start);
 //            if(target<arr[mid]){
@@ -27,6 +31,7 @@ public class FloorANDceiling_in_Array {
     static int floor(int[] arr,int target){
         int start = 0;
         int end = arr.length-1;
+
         while (start<=end){
             int mid = start + (end-start);
             if(target<arr[mid]){
