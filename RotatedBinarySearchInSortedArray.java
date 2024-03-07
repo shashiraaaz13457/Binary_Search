@@ -3,7 +3,7 @@ public class RotatedBinarySearchInSortedArray {
         int[] arr = {4,5,6,7,0,1,2};
         System.out.println(findPivot(arr));
     }
-
+//
     static int search(int[] nums,int target){
         int pivot = findPivot(nums);
 
